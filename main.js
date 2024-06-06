@@ -1,9 +1,6 @@
-const EventEmitter = require('node:events');
-const eventEmitter = new EventEmitter();
+var http = require('http');
 
-eventEmitter.on('start', () => {
-    console.log('started');
-  });
-
-
-  eventEmitter.emit('start');
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end('Hello World!');
+  }).listen(8080); 
