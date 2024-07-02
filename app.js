@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+// The below is a route definition. It takes the route ("/") and a callback function that will run when that route is visit
 app.get("/", function (req, res) {
   res.send("Hello World!");
 });
