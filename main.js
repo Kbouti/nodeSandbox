@@ -1,12 +1,17 @@
-var http = require('http');
+const http = require('http');
 
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('Hello World!');
-  }).listen(8080); 
+const hostname = "127.0.0.1";
+const port = 8000;
+
+const server = http.createServer(function(req, res) {
+  res.writeHead(200, { "Content-Type": "text/plain"});
+
+  res.end("Hello World/n");
+});
+
+server.listen(port, hostname, function() {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
 
 
-  // Completed lessons 1-4 on Mongo DB   6/12/24
-
-  // Completed up to lesson 9 on MongoDB 6/13/24
-  // Test test shuttle day
+// We made a really basic server!!!! Starting back at the basics cuz we fuq'd up the local library project
