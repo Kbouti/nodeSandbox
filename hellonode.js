@@ -17,5 +17,11 @@ server.listen(port, hostname, () => {
 });
 
 
+
+// spent some time troubleshooting local library
+
+
+
+
 // viewable at: 
 // http://127.0.0.1:3000/
