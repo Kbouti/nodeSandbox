@@ -21,7 +21,7 @@ server.listen(port, hostname, () => {
 // spent some time troubleshooting local library
 
 
-
+// Completed postreSQL install lesson 
 
 // viewable at: 
 // http://127.0.0.1:3000/
